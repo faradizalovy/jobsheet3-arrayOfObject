@@ -28,8 +28,7 @@ public class MataKuliahDemo09 {
         System.out.println("Kode        : " +arrayOfMataKuliah09[i].kode);
         System.out.println("Nama        : " +arrayOfMataKuliah09[i].nama); 
         System.out.println("Sks         : " +arrayOfMataKuliah09[i].sks);
-        System.out.println("Jumlah Jam  : " +arrayOfMataKuliah09[i].jumlahJam);   
-           
+        System.out.println("Jumlah Jam  : " +arrayOfMataKuliah09[i].jumlahJam);      
        }
-       }
-   } 
+    }
+}
