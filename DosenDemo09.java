@@ -11,7 +11,7 @@ public class DosenDemo09 {
     Dosen09[] arrayDosen = new Dosen09[n];
     
     for (int i = 0; i < n; i++) {
-        System.out.println("\nMasukkan Data Data dosen ke-" + (i + 1));
+        System.out.println("\nMasukkan Data dosen ke-" + (i + 1));
         System.out.print("Kode         : ");
         String kode = sc.nextLine();
         System.out.print("Nama         : ");
@@ -29,6 +29,16 @@ public class DosenDemo09 {
             System.out.println("\nData Dosen ke-" + (i + 1));
             arrayDosen[i].tampil();
         }
+        DataDosen09 data = new DataDosen09();
+
+        data.dataSemuaDosen(arrayDosen);          
+        System.out.println();
+        data.jumlahDosenPerJenisKelamin(arrayDosen); 
+        System.out.println();
+        data.rerataUsiaDosenPerJenisKelamin(arrayDosen); 
+        data.infoDosenPalingTua(arrayDosen);        
+        data.infoDosenPalingMuda(arrayDosen);       
+
         sc.close();
     }
 }
